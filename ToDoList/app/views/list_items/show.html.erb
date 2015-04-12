@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Item name:</strong>
+  <%= @list_item.item_name %>
+</p>
+
+<p>
+  <strong>Quantity:</strong>
+  <%= @list_item.quantity %>
+</p>
+
+<p>
+  <strong>List:</strong>
+  <%= @list_item.list %>
+</p>
+
+<%= link_to 'Edit', edit_list_item_path(@list_item), class: 'btn btn-info btn-xs' %> |
+<%= link_to 'Back', list_items_path, class: 'btn btn-primary btn-xs' %>

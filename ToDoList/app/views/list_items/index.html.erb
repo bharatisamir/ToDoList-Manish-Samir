@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Showing  List Items</h1>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Item name</th>
+      <th>Quantity</th>
+      <th>List</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @list_items.each do |list_item| %>
+      <tr>
+        <td><%= list_item.item_name %></td>
+        <td><%= list_item.quantity %></td>
+        <td><%= list_item.list %></td>
+        <td><%= link_to 'Show', list_list_items_url %></td>
+
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New List item', new_list_list_item_path %>

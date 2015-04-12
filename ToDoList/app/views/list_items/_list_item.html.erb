@@ -1,0 +1,22 @@
+<table border="0">
+  <tr>
+    <td>
+      <% unless @list_items.first.position == list_item.position %>
+
+          <%= link_to image_tag('up.png'),{ :action => 'index', :method => 'move_higher', :id => list_item.id }%>
+          <%= link_to image_tag('top.png'),{ :action => 'index', :method => 'move_to_top', :id => list_item.id }%>
+
+      <% end %>
+
+      <% unless @list_items.last.position == list_item.position %>
+
+          <% unless list_item.position == (@list_items.first.position || @list_items.last.position) %>  <% end %>
+
+          <%= link_to image_tag('down.png'),{ :action => 'index', :method => 'move_lower', :id => list_item.id }%>
+          <%= link_to image_tag('bottom.png'),{ :action => 'index', :method => 'move_to_bottom', :id => list_item.id }%>
+
+      <% end %>
+
+    </td>
+  </tr>
+</table>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="SQLite -" uuid="506b95da-3ac4-4216-bf21-a75b6611a9de">
+      <secret-storage>master_key</secret-storage>
+    </data-source>
+    <data-source name="Rails ToDoList: development" uuid="3ebda4fd-db85-474d-b3eb-a7bcca815836" />
+  </component>
+</project>

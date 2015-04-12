@@ -1,0 +1,13 @@
+<%= form_for [@list, ListItem.new] do |f| %>
+  <div class="form-group">
+    <%= f.label :item_name %><br>
+    <%= f.text_field :item_name %>
+  </div>
+  <div class="form-group">
+    <%= f.label :quantity %><br>
+    <%= f.number_field :quantity %>
+  </div>
+  <div class="form-group">
+    <%= f.submit %>
+  </div>
+<% end %>
