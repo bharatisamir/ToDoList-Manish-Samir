@@ -53,7 +53,7 @@ class ListItemsController < ApplicationController
   def update
     respond_to do |format|
       if @list_item.update(list_item_params)
-        format.html { redirect_to @list_item, notice: 'List item was successfully updated.' }
+        format.html { redirect_to @list, notice: 'List item was successfully updated.' }
         format.json { render :show, status: :ok, location: @list_item }
       else
         format.html { render :edit }

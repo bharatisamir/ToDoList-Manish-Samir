@@ -40,6 +40,9 @@
         </td>
         </td>
         <td>
+          <%=link_to 'Edit item', edit_list_list_item_path(list_item.list, list_item), class: 'btn btn-danger btn-xs' %>
+        </td>
+        <td>
           <%=link_to 'Delete item', [list_item.list, list_item],method: :delete, data: {confirm: 'Are you sure?'},class: 'btn btn-danger btn-xs' %>
         </td>
       </tr>
